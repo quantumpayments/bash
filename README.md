@@ -12,6 +12,12 @@ In your .bashrc
 # driver to bash
 
     export PROMPT_COMMAND='bash_points.sh 2>/dev/null 1>&2'
+    
+# advanced
+
+In order to get bash history updating every time add
+
+    export PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
 
 
 # command to run (bash)
